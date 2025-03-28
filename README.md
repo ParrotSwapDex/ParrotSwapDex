@@ -1,69 +1,69 @@
-# Welcome to your Lovable project
+# ParrotSwap
 
-## Project info
+Bem-vindo ao ParrotSwap, uma plataforma de troca de tokens na rede Solana. Este projeto permite que os usuários conectem suas carteiras Phantom e realizem trocas de tokens de forma segura e eficiente.
 
-**URL**: https://lovable.dev/projects/fcdbf722-e1d0-42f4-8817-e36b205743cc
+## Visão Geral
 
-## How can I edit this code?
+ParrotSwap é um aplicativo web que facilita a troca de tokens SOL e USDC na rede Solana. O projeto inclui funcionalidades como conexão com a carteira Phantom, visualização de saldos e simulação de transações.
 
-There are several ways of editing your application.
+## Funcionalidades
 
-**Use Lovable**
+- Conexão com a carteira Phantom
+- Visualização de saldos de SOL e USDC
+- Simulação de transações de troca
+- Modo de demonstração para usuários sem a carteira Phantom
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/fcdbf722-e1d0-42f4-8817-e36b205743cc) and start prompting.
+## Tecnologias Utilizadas
 
-Changes made via Lovable will be committed automatically to this repo.
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário
+- **Solana Web3.js**: Biblioteca para interação com a blockchain Solana
+- **Phantom Wallet**: Carteira digital para Solana
+- **React Router**: Gerenciamento de rotas no aplicativo
 
-**Use your preferred IDE**
+## Instalação
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/parrotswap.git
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd parrotswap
+   ```
 
-Follow these steps:
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+4. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+5. Abra o navegador e acesse `http://localhost:8080` para ver o aplicativo em ação.
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Uso
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- **Conectar Carteira**: Clique no botão "Connect Wallet" para conectar sua carteira Phantom.
+- **Modo de Demonstração**: Se a carteira Phantom não estiver disponível, use o modo de demonstração para explorar as funcionalidades.
+- **Troca de Tokens**: Insira os valores desejados e simule uma troca de tokens.
 
-**Edit a file directly in GitHub**
+## Contribuição
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Contribuições são bem-vindas! Siga os passos abaixo para contribuir:
 
-**Use GitHub Codespaces**
+1. Faça um fork do projeto
+2. Crie uma nova branch (`git checkout -b feature/nova-funcionalidade`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Faça o push para a branch (`git push origin feature/nova-funcionalidade`)
+5. Abra um Pull Request
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Licença
 
-## What technologies are used for this project?
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-This project is built with .
+## Contato
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/fcdbf722-e1d0-42f4-8817-e36b205743cc) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+Para mais informações, entre em contato pelo email: contato@parrotswap.com
