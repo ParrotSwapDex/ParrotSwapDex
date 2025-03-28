@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Comic+Neue:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 186 100% 42%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 39 100% 62%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 1rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    @apply font-sans;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-md bg-white/80 border border-white/20 rounded-2xl shadow-lg;
+  }
+  
+  .parrot-button {
+    @apply relative overflow-hidden py-3 px-6 font-poppins font-bold rounded-xl 
+           transition-all duration-300 shadow-md hover:shadow-lg 
+           hover:-translate-y-1 active:translate-y-0;
+  }
+  
+  .parrot-button-red {
+    @apply parrot-button bg-parrot-red text-white hover:bg-parrot-red/90;
+  }
+  
+  .parrot-button-yellow {
+    @apply parrot-button bg-parrot-yellow text-gray-900 hover:bg-parrot-yellow/90;
+  }
+  
+  .parrot-button-blue {
+    @apply parrot-button bg-parrot-blue text-white hover:bg-parrot-blue/90;
+  }
+  
+  .parrot-button-green {
+    @apply parrot-button bg-parrot-green text-gray-900 hover:bg-parrot-green/90;
+  }
+  
+  .parrot-button-orange {
+    @apply parrot-button bg-parrot-orange text-white hover:bg-parrot-orange/90;
+  }
+  
+  .section-title {
+    @apply font-poppins font-bold text-4xl md:text-5xl mb-4 text-center;
+  }
+  
+  .section-subtitle {
+    @apply font-poppins text-xl text-gray-600 mb-8 text-center max-w-3xl mx-auto;
+  }
+  
+  .headline-badge {
+    @apply inline-block px-3 py-1 rounded-full text-xs font-medium mb-4;
+  }
+  
+  .feather-bg {
+    @apply relative;
+  }
+  
+  .feather-bg::before {
+    content: "";
+    @apply absolute inset-0 bg-feather-pattern opacity-5 pointer-events-none;
+  }
+}
+
+.section-container {
+  @apply w-full py-16 md:py-24 px-4 md:px-8 max-w-7xl mx-auto;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.slide-enter {
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.slide-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 500ms;
+}
